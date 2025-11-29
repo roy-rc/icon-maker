@@ -1,6 +1,6 @@
 import { GenerationRequest, GenerationResponse } from './types';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
+const API_BASE_URL = import.meta.env.PROD ? '/api' : (import.meta.env.VITE_API_URL || '/api');
 
 export async function generateIcons(request: GenerationRequest): Promise<GenerationResponse> {
   const response = await fetch(`${API_BASE_URL}/generate`, {
