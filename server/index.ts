@@ -75,6 +75,10 @@ Requirements:
 - Center the icon in the frame
 - Professional icon design`;
 
+      console.log(`\n🎨 Generating icon ${index + 1}/4:`);
+      console.log('Prompt:', fullPrompt);
+      console.log('---');
+
       const output = await replicate.run(
         "black-forest-labs/flux-schnell",
         {
