@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { IconForm } from './components/IconForm';
 import { IconGrid } from './components/IconGrid';
 import { LoadingSpinner } from './components/LoadingSpinner';
